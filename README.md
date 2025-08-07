@@ -25,10 +25,10 @@ lib/
 ├── tabs/ # 公用元件（如 AppBar、Tabs）
 │ ├── myappbar.dart # 自訂 AppBar 樣式
 │ └── tabs.dart # BottomNavigationBar 控制邏輯
-├── pages/ # 每個分頁畫面
-│ ├── home_page.dart     #紫色
-│ ├── message_page.dart  #藍色
-│ ├── category_page.dart #粉色
-│ ├── user_page.dart     #橘色
-│ └── setting_page.dart  #綠色
+└── pages/ # 每個分頁畫面
+├── home_page.dart # 紫色頁面
+├── message_page.dart # 藍色頁面
+├── category_page.dart # 粉色頁面
+├── user_page.dart # 橘色頁面
+└── setting_page.dart # 綠色頁面
 ```
