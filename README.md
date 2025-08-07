@@ -1,16 +1,33 @@
-# homepage_app
+# 📱 homePage_app
 
-A new Flutter project.
+一個用 Flutter 開發的首頁介面 Demo，包含：
 
-## Getting Started
+- 多頁面切換（`BottomNavigationBar` + `PageView`）
+- 自訂AppBar動態變色 和 自訂bBottomNavigationBar動態變色 跟隨頁面變化
+- 使用 Material 風格設計
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠 技術棧
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+| 技術         | 說明                    |
+|--------------|------------------------|
+| Flutter      | UI 框架                 |
+| Dart         | 開發語言                |
+| GitHub       | 原始碼版本控制與託管     |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📁 資料夾結構簡介
+
+lib/
+├── main.dart # App 入口點
+├── tabs/ # 公用元件（如 AppBar、Tabs）
+│ ├── myappbar.dart # 自訂 AppBar 樣式
+│ └── tabs.dart # BottomNavigationBar 控制邏輯
+├── pages/ # 每個分頁畫面
+│ ├── home_page.dart     #紫色
+│ ├── message_page.dart  #藍色
+│ ├── category_page.dart #粉色
+│ ├── user_page.dart     #橘色
+│ └── setting_page.dart  #綠色
