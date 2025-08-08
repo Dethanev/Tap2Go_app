@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:HomePage_app/story/story.dart';
-import 'package:HomePage_app/tabs/drawer.dart';
+import 'package:tab2go_app/story/story.dart';
+import 'package:tab2go_app/tabs/drawer.dart';
 import 'appbar.dart';
 import '../pages/home_page.dart';
 import '../pages/user_page.dart';

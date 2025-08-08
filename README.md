@@ -1,4 +1,4 @@
-# 📱 homePage_app
+# 📱 Tab2GO_app
 
 一個用 Flutter 開發的首頁介面 Demo，包含：
 

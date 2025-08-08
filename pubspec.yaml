@@ -1,4 +1,4 @@
-name: HomePage_app
+name: tab2go_app
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -35,6 +35,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  rename: ^3.1.0
 
 dev_dependencies:
   flutter_test:
@@ -49,9 +50,13 @@ dev_dependencies:
   flutter_launcher_icons: ^0.13.1
 
 flutter_icons:
-  android: true
-  ios: true
-  image_path: "assets/icon/car.png"
+  flutter_icons:
+  android: "adaptive"       
+  ios: true               
+  image_path: "assets/icon/Ethan.jpg"  
+
+  adaptive_icon_foreground: "assets/icon/Ethan.jpg"  
+  adaptive_icon_background: "#FFFFFF"                
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
