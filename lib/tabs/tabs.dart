@@ -26,7 +26,7 @@ class _TabsState extends State<Tabs> {
   ];
 
   final List<Widget> _pages = const [
-    HomePage(),
+    Home(),
     User(),
     Message(),
     Category(),
@@ -38,7 +38,7 @@ class _TabsState extends State<Tabs> {
     return Scaffold(
       appBar: MyAppBar(backgroundColor: _appBarColors[_currentIndex]),
 
-      /// 🔄 PageView + 底部切頁連動動畫
+      // PageView + 底部切頁連動動畫
       body: PageView(
         controller: _pageController,
         onPageChanged: (index) {
@@ -49,7 +49,7 @@ class _TabsState extends State<Tabs> {
         children: _pages,
       ),
 
-      /// 🚀 shifting 動畫 + 背景顏色變換
+      // shifting 動畫 + 背景顏色變換
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.shifting,
         currentIndex: _currentIndex,
