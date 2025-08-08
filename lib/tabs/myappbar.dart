@@ -9,20 +9,8 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       backgroundColor: backgroundColor,
       centerTitle: true,
+      iconTheme: IconThemeData(color: Colors.white),
       title: Text("My App Bar", style: TextStyle(color: Colors.white)),
-      leading: IconButton(
-        onPressed: () {
-        },
-        icon: Icon(Icons.menu),
-        color: Colors.white,
-      ),
-      actions: [
-        IconButton(
-          onPressed: () {
-          },
-          icon: Icon(Icons.logout, color: Colors.white),
-        ),
-      ],
       elevation: 0,
     );
   }

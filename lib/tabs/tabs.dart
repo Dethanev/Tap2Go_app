@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:HomePage_app/story/story.dart';
+import 'package:HomePage_app/tabs/drawer.dart';
 import 'myappbar.dart';
 import '../pages/home_page.dart';
 import '../pages/user_page.dart';
@@ -37,7 +39,10 @@ class _TabsState extends State<Tabs> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MyAppBar(backgroundColor: _appBarColors[_currentIndex]),
-
+      drawer: MyDrawer(),
+      endDrawer: Drawer(
+        child: StoryPage(),
+      ),
       // PageView + 底部切頁連動動畫
       body: PageView(
         controller: _pageController,
@@ -93,6 +98,7 @@ class _TabsState extends State<Tabs> {
           ),
         ],
       ),
+      
     );
   }
 }
