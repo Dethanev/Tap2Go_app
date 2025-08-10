@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -21,6 +22,7 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(30),
             onTap: () {
               print("點到了紫色卡片！");
+              SystemSound.play(SystemSoundType.click);
             },
             child: SizedBox(
               width: 300,

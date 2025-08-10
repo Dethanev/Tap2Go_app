@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:tab2go_app/story/story.dart';
 import 'package:tab2go_app/tabs/drawer.dart';
 import 'appbar.dart';
@@ -50,6 +51,7 @@ class _TabsState extends State<Tabs> {
           setState(() {
             _currentIndex = index;
           });
+          SystemSound.play(SystemSoundType.click);
         },
         children: _pages,
       ),
@@ -69,6 +71,7 @@ class _TabsState extends State<Tabs> {
               curve: Curves.easeInOut,
             );
           });
+          SystemSound.play(SystemSoundType.click);
         },
         items: [
           BottomNavigationBarItem(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -7,6 +8,7 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       backgroundColor: Colors.white,
+
       child: Column(
         children: [
           Row(
@@ -32,7 +34,13 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             leading: CircleAvatar(
               backgroundColor: Colors.blue,
-              child: IconButton(onPressed: () {} ,icon: Icon(Icons.person), color: Colors.white)
+              child: IconButton(
+                onPressed: () {
+                  SystemSound.play(SystemSoundType.click);
+                },
+                icon: Icon(Icons.person),
+                color: Colors.white,
+              ),
             ),
             title: Text("個人中心", style: TextStyle(fontWeight: FontWeight.bold)),
           ),
@@ -40,7 +48,13 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             leading: CircleAvatar(
               backgroundColor: Colors.blue,
-              child: IconButton(onPressed: () {} ,icon: Icon(Icons.message), color: Colors.white)
+              child: IconButton(
+                onPressed: () {
+                  SystemSound.play(SystemSoundType.click);
+                },
+                icon: Icon(Icons.message),
+                color: Colors.white,
+              ),
             ),
             title: Text("訊息中心", style: TextStyle(fontWeight: FontWeight.bold)),
           ),
@@ -48,7 +62,13 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             leading: CircleAvatar(
               backgroundColor: Colors.blue,
-              child: IconButton(onPressed: () {} ,icon: Icon(Icons.image), color: Colors.white)
+              child: IconButton(
+                onPressed: () {
+                  SystemSound.play(SystemSoundType.click);
+                },
+                icon: Icon(Icons.image),
+                color: Colors.white,
+              ),
             ),
             title: Text("相簿中心", style: TextStyle(fontWeight: FontWeight.bold)),
           ),
@@ -56,7 +76,13 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             leading: CircleAvatar(
               backgroundColor: Colors.blue,
-              child: IconButton(onPressed: () {} ,icon: Icon(Icons.wifi), color: Colors.white)
+              child: IconButton(
+                onPressed: () {
+                  SystemSound.play(SystemSoundType.click);
+                },
+                icon: Icon(Icons.wifi),
+                color: Colors.white,
+              ),
             ),
             title: Text("網路設置", style: TextStyle(fontWeight: FontWeight.bold)),
           ),
@@ -64,7 +90,13 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             leading: CircleAvatar(
               backgroundColor: Colors.blue,
-              child: IconButton(onPressed: () {} ,icon: Icon(Icons.map), color: Colors.white),
+              child: IconButton(
+                onPressed: () {
+                  SystemSound.play(SystemSoundType.click);
+                },
+                icon: Icon(Icons.map),
+                color: Colors.white,
+              ),
             ),
             title: Text("地圖設置", style: TextStyle(fontWeight: FontWeight.bold)),
           ),
@@ -72,7 +104,13 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             leading: CircleAvatar(
               backgroundColor: Colors.blue,
-              child: IconButton(onPressed: () {} ,icon: Icon(Icons.category), color: Colors.white)
+              child: IconButton(
+                onPressed: () {
+                  SystemSound.play(SystemSoundType.click);
+                },
+                icon: Icon(Icons.category),
+                color: Colors.white,
+              ),
             ),
             title: Text("分類設置", style: TextStyle(fontWeight: FontWeight.bold)),
           ),
