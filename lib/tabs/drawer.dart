@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:tab2go_app/utils/sound.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -19,12 +19,12 @@ class MyDrawer extends StatelessWidget {
                   accountName: Text("Ethan"),
                   accountEmail: Text("ethan.dev@gmail.com"),
                   currentAccountPicture: CircleAvatar(
-                    backgroundImage: AssetImage("assets/icon/Ethan.jpg"),
+                    backgroundImage: AssetImage("assets/icons/Ethan.jpg"),
                   ),
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.cover,
-                      image: AssetImage("assets/icon/car.png"),
+                      image: AssetImage("assets/icons/car.png"),
                     ),
                   ),
                 ),
@@ -36,7 +36,7 @@ class MyDrawer extends StatelessWidget {
               backgroundColor: Colors.blue,
               child: IconButton(
                 onPressed: () {
-                  SystemSound.play(SystemSoundType.click);
+                  Sound.click1();
                 },
                 icon: Icon(Icons.person),
                 color: Colors.white,
@@ -50,7 +50,7 @@ class MyDrawer extends StatelessWidget {
               backgroundColor: Colors.blue,
               child: IconButton(
                 onPressed: () {
-                  SystemSound.play(SystemSoundType.click);
+                  Sound.click1();
                 },
                 icon: Icon(Icons.message),
                 color: Colors.white,
@@ -64,7 +64,7 @@ class MyDrawer extends StatelessWidget {
               backgroundColor: Colors.blue,
               child: IconButton(
                 onPressed: () {
-                  SystemSound.play(SystemSoundType.click);
+                  Sound.click1();
                 },
                 icon: Icon(Icons.image),
                 color: Colors.white,
@@ -78,7 +78,7 @@ class MyDrawer extends StatelessWidget {
               backgroundColor: Colors.blue,
               child: IconButton(
                 onPressed: () {
-                  SystemSound.play(SystemSoundType.click);
+                  Sound.click1();
                 },
                 icon: Icon(Icons.wifi),
                 color: Colors.white,
@@ -92,7 +92,7 @@ class MyDrawer extends StatelessWidget {
               backgroundColor: Colors.blue,
               child: IconButton(
                 onPressed: () {
-                  SystemSound.play(SystemSoundType.click);
+                  Sound.click1();
                 },
                 icon: Icon(Icons.map),
                 color: Colors.white,
@@ -106,7 +106,7 @@ class MyDrawer extends StatelessWidget {
               backgroundColor: Colors.blue,
               child: IconButton(
                 onPressed: () {
-                  SystemSound.play(SystemSoundType.click);
+                  Sound.click1();
                 },
                 icon: Icon(Icons.category),
                 color: Colors.white,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:tab2go_app/story/story.dart';
+import 'package:tab2go_app/data/story/story.dart';
 import 'package:tab2go_app/tabs/drawer.dart';
+import 'package:tab2go_app/utils/sound.dart';
 import 'appbar.dart';
 import '../pages/home_page.dart';
 import '../pages/user_page.dart';
@@ -41,9 +41,7 @@ class _TabsState extends State<Tabs> {
     return Scaffold(
       appBar: MyAppBar(backgroundColor: _appBarColors[_currentIndex]),
       drawer: MyDrawer(),
-      endDrawer: Drawer(
-        child: StoryPage(),
-      ),
+      endDrawer: Drawer(child: StoryPage()),
       // PageView + 底部切頁連動動畫
       body: PageView(
         controller: _pageController,
@@ -51,7 +49,7 @@ class _TabsState extends State<Tabs> {
           setState(() {
             _currentIndex = index;
           });
-          SystemSound.play(SystemSoundType.click);
+          Sound.click2();
         },
         children: _pages,
       ),
@@ -71,7 +69,7 @@ class _TabsState extends State<Tabs> {
               curve: Curves.easeInOut,
             );
           });
-          SystemSound.play(SystemSoundType.click);
+          Sound.click1();
         },
         items: [
           BottomNavigationBarItem(
@@ -101,7 +99,6 @@ class _TabsState extends State<Tabs> {
           ),
         ],
       ),
-      
     );
   }
 }

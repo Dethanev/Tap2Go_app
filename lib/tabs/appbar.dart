@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:tab2go_app/utils/sound.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Color backgroundColor;
@@ -18,7 +18,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
             (context) => (IconButton(
               icon: Icon(Icons.menu),
               onPressed: () {
-                SystemSound.play(SystemSoundType.click);
+                Sound.click2();
                 Scaffold.of(context).openDrawer();
               },
             )),
@@ -27,7 +27,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
         IconButton(
           icon: Icon(Icons.bookmark),
           onPressed: () {
-            SystemSound.play(SystemSoundType.click);
+            Sound.click2();
             Scaffold.of(context).openEndDrawer();
           },
         ),
