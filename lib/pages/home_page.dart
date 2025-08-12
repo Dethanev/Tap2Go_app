@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tab2go_app/utils/sound.dart';
+import 'package:tap2go_app/utils/sound.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -22,7 +22,7 @@ class _HomeState extends State<Home> {
             borderRadius: BorderRadius.circular(30),
             onTap: () {
               print("點到了紫色卡片！");
-              Sound.fart1();
+              Sound.click1();
             },
             child: SizedBox(
               width: 300,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tab2go_app/utils/sound.dart';
+import 'package:tap2go_app/utils/sound.dart';
 
 class User extends StatefulWidget {
   const User({super.key});
