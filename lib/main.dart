@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'taps/tabs.dart';
+import 'taps/taps.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
