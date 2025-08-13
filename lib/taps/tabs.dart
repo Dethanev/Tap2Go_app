@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tap2go_app/data/story/story.dart';
-import 'package:tap2go_app/tabs/drawer.dart';
+import 'package:tap2go_app/taps/drawer.dart';
 import 'package:tap2go_app/utils/sound.dart';
 import 'appbar.dart';
 import '../pages/home_page.dart';
@@ -24,7 +24,7 @@ class _TabsState extends State<Tabs> {
     Colors.deepPurple,
     Colors.deepOrange,
     Colors.blue,
-    Colors.pink[400]!,
+    Colors.pinkAccent,
     Colors.green,
   ];
 
