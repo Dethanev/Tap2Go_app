@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'listData.dart';
+import 'story_data.dart';
 
 class StoryPage extends StatelessWidget {
   const StoryPage({super.key});

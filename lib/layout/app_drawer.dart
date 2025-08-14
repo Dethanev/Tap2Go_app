@@ -8,22 +8,22 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       backgroundColor: Colors.white,
-
+      // 使用 Column 來排列 Drawer 中的項目
       child: Column(
         children: [
           Row(
             children: [
               Expanded(
                 flex: 1,
-                child: UserAccountsDrawerHeader(
-                  accountName: Text("Ethan"),
-                  accountEmail: Text("ethan.dev@gmail.com"),
-                  currentAccountPicture: CircleAvatar(
-                    backgroundImage: AssetImage("assets/icons/Ethan.jpg"),
+                child: UserAccountsDrawerHeader(  // 使用者帳戶頭像和資訊
+                  accountName: Text("Ethan"), // 使用者名稱
+                  accountEmail: Text("ethan.dev@gmail.com"),  // 使用者電子郵件
+                  currentAccountPicture: CircleAvatar(  // 當前使用者頭像
+                    backgroundImage: AssetImage("assets/icons/Ethan.jpg"),  // 頭像圖片
                   ),
-                  decoration: BoxDecoration(
+                  decoration: BoxDecoration(  // 背景裝飾
                     image: DecorationImage(
-                      fit: BoxFit.cover,
+                      fit: BoxFit.cover,  // 圖片填充方式
                       image: AssetImage("assets/icons/car.png"),
                     ),
                   ),
@@ -31,7 +31,8 @@ class MyDrawer extends StatelessWidget {
               ),
             ],
           ),
-          ListTile(
+          // 使用 ListTile 來顯示 Drawer 中的選項
+          ListTile( 
             leading: CircleAvatar(
               backgroundColor: Colors.blue,
               child: IconButton(

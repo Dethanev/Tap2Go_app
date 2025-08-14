@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'taps/taps.dart';
-void main() => runApp(MyApp());
+import 'layout/app_shell.dart';
+void main() => runApp(Tap2GoApp());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Tap2GoApp extends StatelessWidget {
+  const Tap2GoApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Taps());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: AppShell());
   }
 }
