@@ -22,7 +22,7 @@ class _MessageState extends State<Message> {
             borderRadius: BorderRadius.circular(30),
             onTap: () {
               print("點到了藍色卡片！");
-              Sound.fart2();
+              Sound.fart3();
             },
             child: SizedBox(
               width: 300,
