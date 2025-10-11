@@ -19,7 +19,7 @@ class MyDrawer extends StatelessWidget {
                   accountName: Text("Ethan"), // 使用者名稱
                   accountEmail: Text("ethan@gmail.com"),  // 使用者電子郵件
                   currentAccountPicture: CircleAvatar(  // 當前使用者頭像
-                    backgroundImage: AssetImage("assets/icons/Ethan.jpg"),  // 頭像圖片
+                    backgroundImage: AssetImage("assets/icons/Ethan.png"),  // 頭像圖片
                   ),
                   decoration: BoxDecoration(  // 背景裝飾
                     image: DecorationImage(

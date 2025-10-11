@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="Tab2GO"
+        android:label="Tap2GO"
         android:name="${applicationName}"
-        android:icon="@mipmap/adaptive">
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["myappbar"]
+  "cSpell.words": ["myappbar"],
+  "java.configuration.updateBuildConfiguration": "interactive"
 }
