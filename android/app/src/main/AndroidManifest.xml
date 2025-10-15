@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="Tap2GO"
+        android:label="tap2go_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
