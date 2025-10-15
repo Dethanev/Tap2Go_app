@@ -18,6 +18,15 @@
 
 ---
 
+## 🌟 下載與安裝
+
+### 📦 最新版本
+👉 [Tap2Go v1.0.0 - 下載 APK](https://github.com/Dethanev/Tap2Go_app/releases/tag/v1.0.0)
+
+> 若 Android 提示「來源不明的應用程式」，請至設定 → 安全性 → 啟用「允許安裝」。
+
+---
+
 ## 📁 資料夾結構簡介
 ```
 lib/
